@@ -1,6 +1,6 @@
 class Texts{
   static final title = 'Practical';
-  static final logo = 'assets/images/prac_logo.png';
+  static final logo = 'assets/images/logo__.png';
   static final login = 'LOGIN';
   static final loginS = 'Login';
   static final username = 'Username';
