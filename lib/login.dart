@@ -18,67 +18,53 @@ class _LoginPageState extends State<LoginPage> {
       body: SafeArea(
         child: Column(
           children: [
-            _buildTopHalf(),
-            Expanded(
-              child: _buildBottomHalf(),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildTopHalf() {
-    return Container(
-      height: MediaQuery.of(context).size.height * 0.4,
-      child: Stack(
-        children: [
-          Positioned.fill(
-            child: Neumorphic(
-              style: NeumorphicStyle(
-                depth: 20,
-                color: Colors.orange,
-                shadowLightColor: Colors.white.withOpacity(0.7),
-                shadowDarkColor: Colors.black.withOpacity(0.2),
-                boxShape: NeumorphicBoxShape.roundRect(
-                  BorderRadius.only(
-                    bottomLeft: Radius.circular(90),
-                  ),
-                ),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+            Container(
+              height: MediaQuery.of(context).size.height * 0.4,
+              child: Stack(
                 children: [
-                  SizedBox(
-                    height: 100,
-                    width: 100,
-                    child: Image.asset(Texts().logo),
+                  Positioned.fill(
+                    child: Neumorphic(
+                      style: NeumorphicStyle(
+                        depth: 20,
+                        color: Colors.orange,
+                        shadowLightColor: Colors.white.withOpacity(0.7),
+                        shadowDarkColor: Colors.black.withOpacity(0.2),
+                        boxShape: NeumorphicBoxShape.roundRect(
+                          BorderRadius.only(
+                            bottomLeft: Radius.circular(90),
+                          ),
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            height: 100,
+                            width: 100,
+                            child: Image.asset(Texts().logo),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 40,
+                    right: 40,
+                    child: Text(
+                      Texts().loginS,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 ],
               ),
             ),
-          ),
-          Positioned(
-            bottom: 40,
-            right: 40,
-            child: Text(
-              Texts().loginS,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-
-  }
-
-  Widget _buildBottomHalf() {
-    return Padding(
-      padding: const EdgeInsets.all(30.0),
+            Expanded(
+              child: Padding(
+            padding: const EdgeInsets.all(30.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -157,30 +143,38 @@ class _LoginPageState extends State<LoginPage> {
               child: Text(
                 Texts().login,
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold
-                ),
+                    color: Colors.white,
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold),
               ),
             ),
           ),
-          SizedBox(height: 82,),
+          SizedBox(
+            height: 82,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(Texts().noAccount),
               GestureDetector(
-                  onTap: (){
+                  onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => RegisterPage()),
                     );
-              },
-                  child: Text(Texts().register, style: TextStyle(color: Colors.orange),))
+                  },
+                  child: Text(
+                    Texts().register,
+                    style: TextStyle(color: Colors.orange),
+                  ))
             ],
           ),
-
         ],
+      ),
+    ),
+            ),
+          ],
+        ),
       ),
     );
   }

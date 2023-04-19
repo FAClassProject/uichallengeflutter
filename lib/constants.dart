@@ -1,8 +1,8 @@
 class Texts{
   final title = 'Practical';
   final tap = 'Tap anywhere!';
-  final logo = 'assets/images/prac_logo.png';
-  final login = 'LOGIN';
+  final logo = 'assets/images/logo__.png';
+  final login = 'LOGIN ';
   final loginS = 'Login';
   final username = 'Username';
   final password = 'Password';
