@@ -51,8 +51,8 @@ class _RegisterPageState extends State<RegisterPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(
-                    height: 100,
-                    width: 100,
+                    height: 200,
+                    width: 200,
                     child: Image.asset(Texts().logo),
                   ),
                 ],
@@ -108,7 +108,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   border: InputBorder.none,
                   prefixIcon: Icon(Icons.person),
                   fillColor: Colors.black,
-                  hintText: Texts().fullname,
+                  hintText: Texts().fullName,
                 ),
               ),
             ),

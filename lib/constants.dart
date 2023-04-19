@@ -8,8 +8,8 @@ class Texts{
   final password = 'Password';
   final forgot = 'forgot password?';
   final noAccount = 'Don\'t have an account? ';
-  final register = 'Register ';
-  final fullname = 'Fullname';
+  final register = 'Register';
+  final fullName = 'Fullname';
   final email = 'Email';
   final phone = 'Phone Number';
 }
