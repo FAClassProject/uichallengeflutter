@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_neumorphic: ^3.0.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -60,7 +61,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/password_pool_logo.png
+    - assets/images/prac_logo.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
