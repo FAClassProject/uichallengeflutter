@@ -26,7 +26,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   child: Neumorphic(
                     style: NeumorphicStyle(
                       depth: 20,
-                      color: Colors.orange,
+                      color: Colors.blue,
                       shadowLightColor: Colors.white.withOpacity(0.7),
                       shadowDarkColor: Colors.black.withOpacity(0.2),
                       boxShape: NeumorphicBoxShape.roundRect(
@@ -184,7 +184,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         width: 100,
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Colors.orange),
+                            backgroundColor: MaterialStateProperty.all(Colors.blue),
                             shape: MaterialStateProperty.all(
                               RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(25),
@@ -215,7 +215,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                   MaterialPageRoute(builder: (context) => LoginPage()),
                                 );
                               },
-                              child: Text(Texts.loginS, style: TextStyle(color: Colors.orange),))
+                              child: Text(Texts.loginS, style: TextStyle(color: Colors.blue)))
                         ],
                       ),
                     ],

@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: Texts.title,
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.topRight,
-            colors: [Colors.orangeAccent, Colors.deepOrange],
+            colors: [Colors.lightBlueAccent, Colors.blueAccent],
           ),
         ),
         child: Center(

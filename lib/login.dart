@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Neumorphic(
                       style: NeumorphicStyle(
                         depth: 20,
-                        color: Colors.orange,
+                        color: Colors.blue,
                         shadowLightColor: Colors.white.withOpacity(0.7),
                         shadowDarkColor: Colors.black.withOpacity(0.2),
                         boxShape: NeumorphicBoxShape.roundRect(
@@ -132,7 +132,7 @@ class _LoginPageState extends State<LoginPage> {
             width: 100,
             child: ElevatedButton(
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.orange),
+                  backgroundColor: MaterialStateProperty.all(Colors.blue),
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
@@ -166,7 +166,7 @@ class _LoginPageState extends State<LoginPage> {
                     },
                     child: Text(
                       Texts.register,
-                      style: TextStyle(color: Colors.orange),
+                      style: TextStyle(color: Colors.blue),
                     ))
             ],
           ),
