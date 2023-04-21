@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Neumorphic(
                       style: NeumorphicStyle(
                         depth: 20,
-                        color: Colors.blue,
+                        color: Colors.pinkAccent,
                         shadowLightColor: Colors.white.withOpacity(0.7),
                         shadowDarkColor: Colors.black.withOpacity(0.2),
                         boxShape: NeumorphicBoxShape.roundRect(
@@ -88,7 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                   decoration: InputDecoration(
                     border: InputBorder.none,
                     prefixIcon: Icon(Icons.mail),
-                    fillColor: Colors.black,
+                    fillColor: Colors.pinkAccent,
                     hintText: Texts.username,
                   ),
                 ),
@@ -132,7 +132,7 @@ class _LoginPageState extends State<LoginPage> {
             width: 100,
             child: ElevatedButton(
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.blue),
+                  backgroundColor: MaterialStateProperty.all(Colors.pinkAccent),
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
@@ -166,7 +166,7 @@ class _LoginPageState extends State<LoginPage> {
                     },
                     child: Text(
                       Texts.register,
-                      style: TextStyle(color: Colors.blue),
+                      style: TextStyle(color: Colors.pinkAccent),
                     ))
             ],
           ),

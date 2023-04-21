@@ -5,7 +5,7 @@ class Texts{
   static final loginS = 'Login';
   static final username = 'Username';
   static final password = 'Password';
-  static final forgot = 'forgot password?';
+  static final forgot = 'forgot password? ';
   static final noAccount = 'Don\'t have an account? ';
   static final register = 'Register ';
   static final fullname = 'Fullname';
