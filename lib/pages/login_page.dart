@@ -53,7 +53,8 @@ class _LoginPageState extends State<LoginPage> {
                   padding: const EdgeInsets.only(left: 300, top: 300),
                   child: Column(
                     children: [
-                      Text('Login', style: TextStyle(fontSize: 18)),
+                      Text('Login',
+                          style: TextStyle(fontSize: 18, color: Colors, white)),
                     ],
                   ),
                 ),
