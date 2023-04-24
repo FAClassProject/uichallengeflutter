@@ -44,7 +44,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                   padding: const EdgeInsets.only(top: 70.0),
                   child: Icon(
-                    Icons.church,
+                    Icons.school,
                     color: Colors.white,
                     size: 100,
                   ),

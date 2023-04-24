@@ -15,11 +15,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.deepOrange,
       body: Center(
-        child: Icon(Icons.church, color: Colors.white, size: 100),
+        child: Icon(Icons.school, color: Colors.white, size: 100),
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: navigateToAddPage,
-        label: Icon(Icons.forward_rounded),
+        label: Text('Get Started', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.orange,
       ),
     );
